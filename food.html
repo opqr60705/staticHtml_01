@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郊山旅遊去</title>
+    <link rel="icon" href="./image/indexIcon.png" type="image" sizes="16x16">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        /* 載入header */
+        @import url(./css/header.css);
+        /* 載入footer */
+        @import url(./css/Pageset.css);
+        /* 載入Vertical Tabs */
+        @import url(./css/food_Vertical_tabs.css);
+        /* 載入Modal Box */
+        @import url(./css/food_Modal_box_.css);
+    </style>
+</head>
+
+<body>
+    <!-- HTML特殊符號 -->
+    <!-- https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/533294/ -->
+
+    <!-- 上方Banner + toolBanner -->
+    <div id="headerImgDiv">
+        <img src="./image/LOGO.png" id="headerLogo">
+        <img id="headerImg" src="./image/headerImg.jpg">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">首頁</a>
+        <a href="./road.html">路線介紹</a>
+        <a href="./food.html">附近飲食</a>
+        <a href="./trans.html">交通方式</a>
+        <a href="./note.html">注意事項</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i>&equiv;</i>
+        </a>
+    </div>
+
+    <!-- 匯入Header Js -->
+    <script src="./js/header.js"></script>
+
+    <!-- 內容 -->
+    <div class="tabcol">
+        <button class="tablinkscol" onclick="openTabrow(event, 'List01')" id="defaultOpencol"><b>美食</b></button>
+        <button class="tablinkscol" onclick="openTabrow(event, 'List02')"><b>茶飲</b></button>
+        <button class="tablinkscol" onclick="openTabrow(event, 'List03')"><b>甜品</b></button>
+    </div>
+    <!-- 吃 標題 -->
+    <div id="List01" class="tabtitle tab">
+        <button class="tablinks" onclick="openList01(event, 'Food01')">
+            <p>Le NINI<br>義式餐廳</p>
+        </button>
+        <button class="tablinks" onclick="openList01(event, 'Food02')">
+            <p>大坑紙箱王</p>
+        </button>
+        <button class="tablinks" onclick="openList01(event, 'Food03')">
+            <p>澄石享自在</p>
+        </button>
+    </div>
+    <!-- 喝 標題 -->
+    <div id="List02" class="tabtitle tab">
+        <button class="tablinks" onclick="openList02(event, 'drink01')">
+            <p>L'amour<br>那慕</p>
+        </button>
+        <button class="tablinks" onclick="openList02(event, 'drink02')">
+            <p>四季茶舖</p>
+        </button>
+        <button class="tablinks" onclick="openList02(event, 'drink03')">
+            <p>in's cafe</p>
+        </button>
+    </div>
+    <!-- 甜品 標題 -->
+    <div id="List03" class="tabtitle tab">
+        <button class="tablinks" onclick="openList02(event, 'sweet01')">
+            <p>東東芋圓</p>
+        </button>
+        <button class="tablinks" onclick="openList02(event, 'sweet02')">
+            <p>劉大爺豆花<br>刨冰芋圓</p>
+        </button>
+        <button class="tablinks" onclick="openList02(event, 'sweet03')">
+            <p>老芋仔芋圓</p>
+        </button>
+    </div>
+
+    <div>
+        <!-- 吃 內容 -->
+        <div id="Food01" class="tabcontent">
+            <br>
+            <h4>= Le NINI樂尼尼義式餐廳 =</h4>
+            <hr>
+            <img src="./image/Food/Eat/eat1_p1.jpg" alt="">
+            <hr>
+
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區廍子里廍子巷5-11號(紙箱王大坑店旁)&emsp;<button id="myBtnEat1">Google
+                    Map</button></p>
+            <p>【GOOGLE MAP請搜尋：台中市北屯區東山路二段2巷】</p>
+            <p>&#9742 訂位電話：04-22399511</p>
+            <table>
+                <tr>
+                    <th colspan="2">營業時間</th>
+                </tr>
+                <tr>
+                    <td>周一~周五</td>
+                    <td>11:30~22:00</td>
+                </tr>
+                <tr>
+                    <td>周六~日</td>
+                    <td>11:30~22:00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">&#9733 最後點餐20:50</td>
+                </tr>
+            </table>
+            <br>
+            <p>&#9733 每人最低消費 150元</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://www.lenini.com.tw/"><b>官網</b></a>
+                <a href="https://www.facebook.com/lenini.pasta.pizza/"><img src="./image/FBlogo.png"></a>
+                <a href="https://line.me/R/ti/p/%40142onerw"><img src="./image/./LINElogo.png"></a>
+                <a href="https://www.instagram.com/leninigroup/"><img src="./image/IGlogo.png"></a>
+                <a href="https://www.youtube.com/channel/UCGh-xI_V8Hsbou-PLl_pTLg/featured"><img
+                        src="./image/YTlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Eat/eat1_p2.webp">
+            <img src="./image/Food/Eat/eat1_p3.jpg">
+        </div>
+
+        <div id="Food02" class="tabcontent">
+            <br>
+            <h4>= 台中大坑紙箱王 =</h4>
+            <hr>
+            <img src="./image/Food/Eat/eat2_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區東山路二段2巷2號&emsp;<button id="myBtnEat2">Google Map</button></p>
+            <p>&#9742 電話：04－22398868</p>
+            <p><img src="./image/Time_icon.png"> 營業時間：AM09:00-PM20:00(全年無休)</p>
+            <p><img src="./image/Time_icon.png"> 餐廳供餐：AM11:00-PM19:00</p>
+            <p>門票：$200/大人(可折抵$100元)</p>
+            <span>&#9733 身高100公分以下兒童免費入園 &#9733</span><br>
+
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://www.cartonking.com.tw/stores.htm"><b>官網</b></a>
+                <a href="https://www.facebook.com/twcartonking/?fref=pb&hc_location=profile_browser"><img
+                        src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Eat/eat2_p2.jpg">
+            <img src="./image/Food/Eat/eat2_p3.jpg">
+            <img src="./image/Food/Eat/eat2_p4.jpg">
+        </div>
+
+        <div id="Food03" class="tabcontent">
+            <br>
+            <h4>= 台中澄石享自在 =</h4>
+            <hr>
+            <img src="./image/Food/Eat/eat3_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區東山路二段207-5號&emsp;<button id="myBtnEat3">Google Map</button>
+            </p>
+            <p><img src="./image/Time_icon.png"> 營業時間：每天早上11:30 -晚上19:00</p>
+            <p>&#9742 預約電話：04-2239-1059</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://carefree-park.com/"><b>官網</b></a>
+                <a href="https://www.facebook.com/carefree.epark/?ref=bookmarks"><img src="./image/FBlogo.png"></a>
+                <a href="https://www.instagram.com/carefree.epark/?hl=zh-tw"><img src="./image/IGlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Eat/eat3_p2.jpg">
+            <img src="./image/Food/Eat/eat3_p3.jpg">
+        </div>
+
+        <!-- 喝 內容 -->
+        <div id="drink01" class="tabcontent">
+            <br>
+            <h4>『L'amour 那慕』</h4>
+            <hr>
+            <img src="./image/Food/drink/drink1_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區軍福13路98號&emsp;<button id="myBtnDrink1">Google Map</button>
+            </p>
+            <p><img src="./image/Time_icon.png"> 營業時間：10:00-20:00</p>
+            <p>&#9742 電話：04-2239-1263</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="http://www.lamourbubbletea.com/"><b>官網</b></a>
+                <a href="https://www.facebook.com/lamourmoussebubbletea/"><img src="./image/FBlogo.png"></a>
+                <a href="https://www.instagram.com/lamour0630/"><img src="./image/IGlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/drink/drink1_p2.jpg">
+            <img src="./image/Food/drink/drink1_p3.jpg">
+        </div>
+
+        <div id="drink02" class="tabcontent">
+            <br>
+            <h4>『四季茶舖』</h4>
+            <hr>
+            <img src="./image/Food/drink/drink2_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區東山路2段51-2號&emsp;<button id="myBtnDrink2">Google Map</button>
+            </p>
+            <p><img src="./image/Time_icon.png"> 營業時間：每天早上09:00 -晚上19:00</p>
+            <p>&#9742 預約電話：0912-068661</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a
+                    href="https://zh-tw.facebook.com/%E5%9B%9B%E5%AD%A3%E8%8C%B6%E8%88%96-%E5%8F%B0%E4%B8%AD%E5%A4%A7%E5%9D%91-744281478915394/"><img
+                        src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/drink/drink2_p2.jpg">
+            <img src="./image/Food/drink/drink2_p3.jpg">
+        </div>
+
+        <div id="drink03" class="tabcontent">
+            <br>
+            <h4>『in's cafe』</h4>
+            <hr>
+            <img src="./image/Food/drink/drink3_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區祥順路二段396號&emsp;<button id="myBtnDrink3">Google Map</button>
+            </p>
+            <p><img src="./image/Time_icon.png"> 營業時間：11:00~18:00 <span>(一二休息)</span></p>
+            <p>&#9742 預約電話：04-22397277</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://www.facebook.com/inscafe2017/"><img src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/drink/drink3_p2.jpg">
+            <img src="./image/Food/drink/drink3_p3.jpg">
+            <img src="./image/Food/drink/drink3_p4.jpg">
+            <img src="./image/Food/drink/drink3_p5.jpg">
+        </div>
+
+        <!-- 甜 內容 -->
+        <div id="sweet01" class="tabcontent">
+            <br>
+            <h4>- 東東芋圓 -</h4>
+            <hr>
+            <img src="./image/Food/Dessert/dessert1_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：臺中市北屯區東山路二段48-3號&emsp;<button id="myBtnDessert1">Google
+                    Map</button></p>
+            <p><img src="./image/Time_icon.png"> 營業時間：每天早上09:00 -晚上22:00</p>
+            <p>&#9742 預約電話：04-22396349</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a
+                    href="https://www.facebook.com/pages/category/Shaved-Ice-Shop/%E5%A4%A7%E5%9D%91%E6%9D%B1%E6%9D%B1%E8%8A%8B%E5%9C%93-189752871056347/"><img
+                        src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Dessert/dessert1_p2.jpg">
+            <img src="./image/Food/Dessert/dessert1_p3.jpg">
+        </div>
+
+        <div id="sweet02" class="tabcontent">
+            <br>
+            <h4>- 劉大爺豆花刨冰芋圓 -</h4>
+            <hr>
+            <img src="./image/Food/Dessert/dessert2_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區東山路2段51-2號&emsp;<button id="myBtnDessert2">Google
+                    Map</button></p>
+            <p><img src="./image/Time_icon.png"> 營業時間：每天早上09:00 -晚上19:00</p>
+            <p>&#9742 預約電話：0912-068661</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://www.facebook.com/lic1685858/"><img src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Dessert/dessert2_p2.jpg">
+            <img src="./image/Food/Dessert/dessert2_p3.jpg">
+        </div>
+
+        <div id="sweet03" class="tabcontent">
+            <br>
+            <h4>- 老芋仔芋圓 -</h4>
+            <hr>
+            <img src="./image/Food/Dessert/dessert3_p1.jpg">
+            <hr>
+            <p><img src="./image/Lacal_icon.png"> 地址：台中市北屯區東山路一段408-2號&emsp;<button id="myBtnDessert3">Google
+                    Map</button></p>
+            <p><img src="./image/Time_icon.png"> 營業時間：每天早上09:00 -晚上22:00</p>
+            <p><span>(六日為09:30開店)</span></p>
+            <p>&#9742 預約電話：04-22395289</p>
+            <span>營業時間如有更動依店家公佈營業時間為準</span>
+            <div>
+                <img src="./image/Link_Icon.png">
+                <a href="https://www.facebook.com/pages/%E8%80%81%E8%8A%8B%E4%BB%94%E8%8A%8B%E5%9C%93/167336416650955"><img
+                        src="./image/FBlogo.png"></a>
+            </div>
+            <hr>
+            <img src="./image/Food/Dessert/dessert3_p2.jpg">
+            <img src="./image/Food/Dessert/dessert3_p3.jpg">
+        </div>
+    </div>
+
+    <!-- eat 1 map -->
+    <div id="myModalEat1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>樂尼尼義式餐廳</h2>
+                <span class="close" id="closeEat1">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區廍子里廍子巷5-11號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2164.2519617946696!2d120.73738473515752!3d24.17792436409309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd634f16c13203e4f!2zTEVOSU5JIOaoguWwvOWwvOe-qeW8j-mkkOW7sy3lj7DkuK3lpKflnZHlupc!5e0!3m2!1szh-TW!2stw!4v1611678181005!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- eat 2 map -->
+    <div id="myModalEat2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>台中大坑紙箱王</h2>
+                <span class="close" id="closeEat2">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區東山路二段2巷2號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4328.500635243051!2d120.7367517822821!3d24.178021316576697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6396f0974ae0c46!2z5aSn5Z2R4pSA57SZ566x546L5Ym15oSP5ZyS5Y2A!5e0!3m2!1szh-TW!2stw!4v1611679373797!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- eat 3 map -->
+    <div id="myModalEat3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>澄石享自在</h2>
+                <span class="close" id="closeEat3">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區東山路二段207-5號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6120.312930003124!2d120.78441921190901!3d24.201180860707286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64ad1fbba4ef225b!2z5r6E55-z5Lqr6Ieq5Zyo!5e0!3m2!1szh-TW!2stw!4v1611679513887!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drink 1 map -->
+    <div id="myModalDrink1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>L'amour 那慕</h2>
+                <span class="close" id="closeDrink1">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區軍福13路98號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4328.740649253526!2d120.7282213894073!3d24.170943864823094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a3f5ffc38d19903!2zTCdhbW91ciDpgqPmhZUt5oWV5pav5rC05p6c6Iy26aOy5paZ5bCI6LOjIOi7jeemj-e4veW6lw!5e0!3m2!1szh-TW!2stw!4v1611680243978!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drink 2 map -->
+    <div id="myModalDrink2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>四季茶舖</h2>
+                <span class="close" id="closeDrink2">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區東山路2段51-2號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3435.493878980261!2d120.7387570207833!3d24.179484839304607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fd317a41e63e853!2z5Zub5a2j6Iy26IiW!5e0!3m2!1szh-TW!2stw!4v1611680323203!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drink 3 map -->
+    <div id="myModalDrink3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>in's cafe</h2>
+                <span class="close" id="closeDrink3">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區祥順路二段396號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3060.7606208736934!2d120.73305966176834!3d24.176000254808695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77a6f47db61d087a!2zaW4ncyBjYWZlIOWPsOS4rQ!5e0!3m2!1szh-TW!2stw!4v1611680426374!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dessert 1 map -->
+    <div id="myModalDessert1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>東東芋圓</h2>
+                <span class="close" id="closeDessert1">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>臺中市北屯區東山路二段48-3號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7279.512067907064!2d120.73615003800766!3d24.180287408885746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e4f4835c09079ef!2z5p2x5p2x6IqL5ZyTIOacrOW6lw!5e0!3m2!1szh-TW!2stw!4v1611683243425!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dessert 2 map -->
+    <div id="myModalDessert2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>劉大爺豆花刨冰芋圓 </h2>
+                <span class="close" id="closeDessert2">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區東山路2段51-2號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.853170292451!2d120.73185131536776!3d24.1768816782659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469199c718699a9%3A0x6cf36a68f61c5f60!2z5YqJ5aSn54i66LGG6Iqx5Yio5Yaw6IqL5ZyTIOWkp-WdkeW6lw!5e0!3m2!1szh-TW!2stw!4v1611683476991!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dessert 3 map -->
+    <div id="myModalDessert3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>老芋仔芋圓 </h2>
+                <span class="close" id="closeDessert3">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>台中市北屯區東山路一段408-2號</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.853170292451!2d120.73185131536776!3d24.1768816782659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691840a7f7d1f5%3A0xbb9a050c70086cb1!2z6ICB6IqL5LuU6IqL5ZyT!5e0!3m2!1szh-TW!2stw!4v1611683553149!5m2!1szh-TW!2stw"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- 載入Vertical Tabs JS -->
+    <script src="./js/food_Vertical_tabs.js"></script>
+
+    <!-- 載入Modal Box Js -->
+    <script src="./js/food_Modal_box.js"></script>
+
+    <!-- footerBIG -->
+    <div class="footerBanner">
+        <table>
+            <tr class="footerTr">
+                <td class="footerTd"><img src="./image/LOGO.png" id="footerLogo"></td>
+                <td class="footerTd"><a class="aChange" href="./road.html">路線介紹</a></td>
+                <td class="footerTd"><a class="aChange" href="./food.html">附近飲食</a></td>
+                <td class="footerTd"><a class="aChange" href="./trans.html">交通資訊</a></td>
+                <td class="footerTd"><a class="aChange" href="./note.html">注意事項</a></td>
+                <td class="footerTd"><a class="aChange" href="./index.html">HOME</a></td>
+                <td>
+                    <a href="https://zh-tw.facebook.com/TCscenic/"><img src="./image/FBlogo.png" id="fbLogo"></a>
+                    <a href=""><img src="./image/QR_code.png" id="qrCode"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- footerSMALL -->
+    <div id="footerDis">
+        <div class="footerSmall">
+            <table>
+                <tr class="footerStr">
+                    <td><a class="aChange" href="./road.html">路線介紹</a></td>
+                    <td><a class="aChange" href="./food.html">附近飲食</a></td>
+                    <td><a class="aChange" href="./trans.html">交通資訊</a></td>
+                    <td><a class="aChange" href="./note.html">注意事項</a></td>
+                    <td><a class="aChange" href="./index.html">HOME</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><a href="./index.html"><img src="./image/LOGO.png" id="footerLogoSmall"></a></td>
+                    <td><a href="https://zh-tw.facebook.com/TCscenic/"><img src="./image/FBlogo.png" id="fbLogo"></a>
+                        <a href=""><img src="./image/QR_code.png" id="qrCode"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
