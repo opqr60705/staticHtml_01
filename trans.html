@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郊山旅遊去</title>
+    <link rel="icon" href="./image/indexIcon.png" type="image" sizes="16x16">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        /* 載入header */
+        @import url(./_css/header.css);
+        /* 載入footer */
+        @import url(./_css/Pageset.css);
+        /* 載入頁面css */
+        @import url(./_css/trans.css);
+    </style>
+</head>
+
+<body>
+    <!-- 上方Banner + toolBanner -->
+    <div id="headerImgDiv">
+        <img src="./image/LOGO.png" id="headerLogo">
+        <img id="headerImg" src="./image/headerImg.jpg">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">首頁</a>
+        <a href="./road.html">路線介紹</a>
+        <a href="./food.html">附近飲食</a>
+        <a href="./trans.html">交通方式</a>
+        <a href="./note.html">注意事項</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i>&equiv;</i>
+        </a>
+    </div>
+
+    <!-- 匯入Header Js -->
+    <script src="./js/header.js"></script>
+
+    <!-- 內文 -->
+    <div class="trans_content">
+        <br>
+        <P>由臺中市的文心路穿越北屯路，再進到東山路即算進入大坑風景區的範圍。主要對外聯絡道路為129 道路，貫穿整區連結臺中市，另有多條產業道路縱橫交錯，如連坑巷、苧園巷、北坑巷、大湖巷、竹坑巷形成大坑風景區的交通道路網。
+        </P>
+        <br>
+        <h4><b>自行開車</b></h4>
+        <p>國道一號南下：中清交流道往臺中方向下，接環中路右轉松竹路二段，再左轉東山路即可到達大坑風景區。</p>
+        <p>國道一號北上：臺中中港交流道往臺中方向下，接臺灣大道左轉文心路經北屯路直行東山路，即可到達大坑風景區。</p>
+        <p>國道三號：龍井系統交流道下，接台12 線至臺灣大道左轉文心路，續行東山路即到達大坑風景區。</p>
+        <p>74 號快速道路：由22K 松竹交流道轉松竹路往東直行，到達東山路再左轉進入大坑風景區。</p>
+        <h4><b>大眾運輸</b></h4>
+        <h5><b>客運</b></h5>
+        <p>假日期間因大量遊客開車上山，停車位易不足，建議可將車輛停放在經補庫免費停車場，再搭公車上山。</p>
+        <p>臺中客運：15 路。</p>
+        <p>中鹿客運：1、20、21 路。</p>
+        <p>四方電巴：68、922 路。</p>
+        <p>豐原客運：51、270、271、276、277 路。</p>
+        <p>統聯客運：85 路。</p>
+        <p>另在大坑9 號步道站( 東山路與松竹路交叉口附近之經補庫停車場前) 可搭乘臺中客運66 路( 該公車會在大坑內繞行，通往大坑1 號2 號3 號4 號登山步道及中正露營區者可搭乘)。</p>
+        <h5><b>臺鐵</b></h5>
+        <p>搭乘臺鐵至「松竹車站」下車，轉乘922 號公車至大坑9號步道站即可抵達。</p>
+        <h5><b>捷運</b></h5>
+        <p>搭乘臺中捷運綠線至「松竹站」、「舊社站」、「北屯總站」下車，轉乘922 號公車至大坑9 號步道站即可抵達。</p>
+        <p><b>如仍有搭乘大眾交通工具上之問題，請逕洽<a href="http://citybus.taichung.gov.tw/ibus/">臺中市公車動態暨路網轉乘系統</a>查詢。</b></p>
+
+        <!-- 說明流程 -->
+        <h4><b>計程車</b></h4>
+        <ol><b>使用計程車試算步驟如下：</b>
+            <li>請先使用Here We Go 地圖設定地點</li>
+            <li>交通模式選擇開車</li>
+            <li>在表格內輸入公里數</li>
+            <li>在表格內輸入行車時間</li>
+            <li>按下計算紐</li>
+        </ol>
+    </div>
+
+    
+    <!-- 崁入MAP 大於600px -->
+    <iframe id="mapBig"
+        src="https://wego.here.com/directions/drive/%E5%8F%B0%E4%B8%AD%E8%BB%8A%E7%AB%99,-%E5%8F%B0%E4%B8%AD%E5%B8%82%E4%B8%AD%E5%8D%80%E8%87%BA%E7%81%A3%E5%A4%A7%E9%81%93%E4%B8%80%E6%AE%B51%E8%99%9F:158wsmc6-63d9f792e95c460fb1a35a134dd8ef14/%E8%87%BA%E7%81%A3406%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8C%97%E5%B1%AF%E5%8D%80%E6%9D%B1%E5%B1%B1%E8%B7%AF%E4%B8%80%E6%AE%B5383%E5%B7%B7:24.17701,120.73371?map=24.15716,120.70906,14,normal&avoid=carHOV"
+        frameborder="0"></iframe>
+
+    <!-- 試算表格 big screen -->
+    <div class="taxiDivBig trans_content">
+        <table class="taxiTable" id="tableBG">
+            <thead>
+                <tr>
+                    <th colspan="7">台中市計程車計費表</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">收費標準</th>
+                    <td>起跳距離</td>
+                    <td>起跳運價</td>
+                    <td>里程計費基準</td>
+                    <td>里程計費單價</td>
+                    <td>延遲時間計算基準</td>
+                    <td>延遲時間單價</td>
+                </tr>
+                <tr>
+                    <td>1500公尺</td>
+                    <td>85元</td>
+                    <td>200公尺</td>
+                    <td>5元</td>
+                    <td>2分鐘</td>
+                    <td>5元</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">費率試算</th>
+                    <td colspan="2">行駛公里數</td>
+                    <td colspan="2">延滯(行車)時間</td>
+                    <td colspan="2" class="taxiMargin">
+                        <button onclick="sumMoneyBig()">試算計程車車費</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="inputTXT" id="KMBig"></td>
+                    <td colspan="2"><input type="text" class="inputTXT" id="TIMEBig"></td>
+                    <td colspan="2"><span id="taxiMoneyBig"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 崁入MAP 小於600px -->
+    <div id="mapSmallDiv"><iframe id="mapSmall"
+        src="https://wego.here.com/directions/drive/%E5%8F%B0%E4%B8%AD%E8%BB%8A%E7%AB%99,-%E5%8F%B0%E4%B8%AD%E5%B8%82%E4%B8%AD%E5%8D%80%E8%87%BA%E7%81%A3%E5%A4%A7%E9%81%93%E4%B8%80%E6%AE%B51%E8%99%9F:158wsmc6-63d9f792e95c460fb1a35a134dd8ef14/%E8%87%BA%E7%81%A3406%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8C%97%E5%B1%AF%E5%8D%80%E6%9D%B1%E5%B1%B1%E8%B7%AF%E4%B8%80%E6%AE%B5383%E5%B7%B7:24.17701,120.73371?map=24.15716,120.70906,14,normal&avoid=carHOV"
+        frameborder="0"></iframe></div>
+    <br>
+    <!-- 試算表格 small screen -->
+    <div class="taxiDivSmall trans_content">
+        <table class="taxiTable" id="tableBG_S">
+            <thead>
+                <tr>
+                    <th colspan="3">台中市計程車計費表</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6" class="textRow">收費標準</th>
+                    <td>起跳距離</td>
+                    <td>起跳運價</td>
+                </tr>
+                <tr>
+                    <td>1500公尺</td>
+                    <td>85元</td>
+                </tr>
+                <tr>
+                    <td>里程計費基準</td>
+                    <td>里程計費單價</td>
+                </tr>
+                <tr>
+                    <td>200公尺</td>
+                    <td>5元</td>
+                </tr>
+                <tr>
+                    <td>延遲時間計算基準</td>
+                    <td>延遲時間單價</td>
+                </tr>
+                <tr>
+                    <td>2分鐘</td>
+                    <td>5元</td>
+                </tr>
+                <tr>
+                    <th rowspan="7" class="textRow">費率試算</th>
+                    <td colspan="2" class="textalignLeft">行駛公里數：
+                        <input type="text" class="inputTXT" id="KMSmall">
+                    </td>
+                </tr>
+                <tr class="textalignLeft">
+                    <td colspan="2">行車總時間：
+                        <input type="text" class="inputTXT" id="TIMESmall">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="taxiMargin">
+                        <button onclick="sumMoneySmall()">試算車費</button>
+                    </td>
+                    <td class="taxiMargin">
+                        <div><span id="taxiMoneySmall"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <!-- 匯入計算計程車費 -->
+    <script src="./js/trans_Taxi_money.js"></script>
+
+    <!-- 參考網站 -->
+    <!-- https://www.mtaxi.com.tw/%E8%A8%88%E7%A8%8B%E8%BB%8A%E8%B2%BB%E7%8E%87/ 費率參考 -->
+    <!-- https://www.scenic.taichung.gov.tw/863699/post 大坑風景區-交通資訊 -->
+
+    <!-- footerBIG -->
+    <div class="footerBanner">
+        <table>
+            <tr class="footerTr">
+                <td class="footerTd"><img src="./image/LOGO.png" id="footerLogo"></td>
+                <td class="footerTd"><a class="aChange" href="./road.html">路線介紹</a></td>
+                <td class="footerTd"><a class="aChange" href="./food.html">附近飲食</a></td>
+                <td class="footerTd"><a class="aChange" href="./trans.html">交通資訊</a></td>
+                <td class="footerTd"><a class="aChange" href="./note.html">注意事項</a></td>
+                <td class="footerTd"><a class="aChange" href="./index.html">HOME</a></td>
+                <td>
+                    <a href="https://zh-tw.facebook.com/TCscenic/"><img src="./image/FBlogo.png" id="fbLogo"></a>
+                    <a href=""><img src="./image/QR_code.png" id="qrCode"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- footerSMALL -->
+    <div id="footerDis">
+        <div class="footerSmall">
+            <table>
+                <tr class="footerStr">
+                    <td><a class="aChange" href="./road.html">路線介紹</a></td>
+                    <td><a class="aChange" href="./food.html">附近飲食</a></td>
+                    <td><a class="aChange" href="./trans.html">交通資訊</a></td>
+                    <td><a class="aChange" href="./note.html">注意事項</a></td>
+                    <td><a class="aChange" href="./index.html">HOME</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><a href="./index.html"><img src="./image/LOGO.png" id="footerLogoSmall"></a></td>
+                    <td><a href="https://zh-tw.facebook.com/TCscenic/"><img src="./image/FBlogo.png" id="fbLogo"></a>
+                        <a href=""><img src="./image/QR_code.png" id="qrCode"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
