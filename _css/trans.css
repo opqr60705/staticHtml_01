@@ -1,0 +1,174 @@
+/* 內文外層div */
+.trans_content {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/* 內文小標題 */
+.trans_content h4 {
+    color: green;
+}
+
+/* 表格邊線 */
+.taxiTable td,
+.taxiTable th {
+    border: solid 2px black;
+}
+
+/* 表格寬度設定 */
+.taxiTable {
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* 大地圖 大小設定 */
+#mapBig {
+    width: 70vw;
+    height: 70vh;
+    margin: 0 0 0 15%;
+}
+
+/* 小地圖 大於600px 關閉 */
+#mapSmall {
+    display: none;
+}
+
+/* 大地圖 大於600px 預設顯示 */
+.taxiDivBig {
+    display: initial;
+}
+
+/* 小 表格 大於600px 關閉 */
+.taxiDivSmall {
+    display: none;
+}
+
+/* 輸入表格 寬度設定 */
+.inputTXT {
+    width: 90%;
+    margin: 5px 0px;
+}
+
+/* 表格 與 輸入表格部切線 */
+.taxiMargin {
+    padding: 5px 0px;
+}
+
+/* 小 表格 寬度設定 */
+.textRow {
+    width: 10%;
+}
+
+/* 大 表格 背景色 */
+#tableBG tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+#tableBG tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* 小 表格 背景色 */
+#tableBG_S tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+#tableBG_S tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* 表格 大標題 */
+thead th {
+    background-color: black;
+    color: white;
+}
+
+/* 表格 小標題 */
+tbody th {
+    background-color: rgb(131, 131, 131);
+    color: white;
+}
+
+/* 螢幕小於600 */
+@media only screen and (max-width: 600px) {
+    /* 大 表格 關閉 */
+    .taxiDivBig {
+        display: none;
+    }
+    /* 小表格開啟 */
+    .taxiDivSmall {
+        display: initial;
+    }
+    /* 表格 寬度改變 */
+    .taxiTable {
+        width: 70vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* 輸入格 和 邊線距離 */
+    .inputTXT {
+        margin-bottom: 10px;
+    }
+    /* 小標題寬度 */
+    .textRow {
+        width: 30px;
+    }
+    /* 大地圖關閉 */
+    #mapBig {
+        display: none;
+    }
+    /* 小地圖開啟 */
+    #mapSmall {
+        width: 370px;
+        height: 680px;
+        display: initial;
+    }
+
+    /* 小地圖置中 */
+    #mapSmallDiv {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 螢幕600~1000 */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    /* 大表格關閉 */
+    .taxiDivBig {
+        display: none;
+    }
+    /* 小表格開啟 */
+    .taxiDivSmall {
+        display: initial;
+    }
+    /* 表格寬度改變 */
+    .taxiTable {
+        width: 70vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* 輸入格 和 邊線距離 */
+    .inputTXT {
+        margin-bottom: 10px;
+        width: 70%;
+    }
+    /* 小標題寬度 */
+    .textRow {
+        width: 30px;
+    }
+    /* 輸入格 小標題置左 */
+    .textalignLeft {
+        text-align: left;
+    }
+    /* 大地圖大小設定 */
+    #mapBig {
+        width: 70vw;
+        height: 90vh;
+    }
+    /* 小地圖關閉 */
+    #mapSmall {
+        display: none;
+    }
+}

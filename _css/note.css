@@ -1,0 +1,170 @@
+/* 標題樣式 */
+h4 {
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* 按鈕樣式 */
+.accordion {
+    background-color: rgb(175, 175, 175);
+    cursor: pointer;
+    /* 更改游標 */
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* 文字 */
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 115, 0);
+    text-align: left;
+}
+
+/* 點擊 變色 */
+.active {
+    background-color: rgb(190, 170, 170);
+}
+
+/* 滑入 變色 */
+.accordion:hover {
+    background-color: rgb(220, 220, 200);
+}
+
+/* panel樣式 Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow-y: scroll;
+    /* 讓內層 accordion 可顯示拉條 */
+    transition: max-height 0.5s ease-out;
+}
+
+.accordion:after {
+    content: '\1F446';
+    /* 使用 Unicode 新增 + */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after:not(1) {
+    content: "\1F447";
+    /* 使用 Unicode 新增 - */
+}
+
+/* DIV樣式 inside */
+.accordionIn {
+    background-color: #bbb;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* 文字 */
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 115, 0);
+    text-align: left;
+}
+
+/* panel樣式 inside Note: hidden by default */
+.panelIn {
+    padding: 0 18px;
+    transition: max-height 0.5s ease-out;
+}
+
+.accordionIn:after {
+    content: '\1F447';
+    /* 使用 Unicode 新增 + */
+    font-size: 13px;
+    float: right;
+}
+
+/* 調整內層圖片大小 */
+.panelIn>img {
+    width: 100%;
+}
+
+/* 調整內層 獼猴 圖片大小 */
+#monkeyImg{
+    width:fit-content;
+}
+
+.panelIn p{
+    text-align: center;
+}
+
+/* 調整 ol 大小 */
+ol b {
+    font-size: large;
+}
+
+/* 調整露營區地圖 */
+#cap_map_img {
+    width: 100%;
+}
+
+/* 隱藏螢幕低於600的圖片範圍 */
+#cap_map_div {
+    overflow: hidden;
+}
+
+/* 設定 基本資料 外框 */
+#cap_info {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+/* 設定 設施 和 資料 欄寬 */
+#cap_fac th,
+#cap_fac td,
+#cap_info th,
+#cap_info td {
+    width: 25%;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+/* 設定 設施 外框 */
+#cap_fac {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+/* 設定 設施 和 資料 文字 */
+#cap_fac_title,
+#cap_info_title {
+    text-align: center;
+}
+
+/* 表格背景色 */
+#cap_info th,
+#cap_fac th {
+    background-color: rgb(0, 220, 0);
+}
+
+/* 文字提醒色 */
+span {
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    /* 調整圖片大小 讓他被邊線隱藏 */
+    #cap_map_img {
+        width: 200%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    /* 調整圖片大小 讓他被邊線隱藏 */
+    #cap_map_img {
+        width: 200%;
+    }
+}
